@@ -20,6 +20,9 @@ import com.jaydenxiao.common.commonwidget.StatusBarCompat;
 import com.jaydenxiao.common.daynightmodeutils.ChangeModeController;
 import com.umeng.analytics.MobclickAgent;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import butterknife.ButterKnife;
 
 /**
@@ -103,6 +106,7 @@ public abstract class BaseActivity<T extends BasePresenter, E extends BaseModel>
     public abstract void initPresenter();
     //初始化view
     public abstract void initView();
+    List<Integer> mIntegers=new ArrayList<>();
 
 
     /**
